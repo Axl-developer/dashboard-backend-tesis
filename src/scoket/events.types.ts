@@ -1,6 +1,6 @@
 
-const server = {
+const serverEvents = {
     welcom:'server:welcom'
 }
 
-export { server }
+export { serverEvents }

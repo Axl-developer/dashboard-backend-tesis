@@ -10,7 +10,13 @@ type userProject = {
 
 type projectTask = {
     customerProjectTask: string,
-    namePojectTask: string,
+    nameProjectTask: string,
+}
+
+type projectStatistics = {
+  total: number,
+  actives: number,
+  percent: number
 }
 
 interface userTasks {
@@ -33,11 +39,7 @@ interface user {
   dateStart: Date,
   dateEnd: Date|string,
   skills: string[],
-  projectStatistics:{
-    total: number,
-    actives: number,
-    percent: number
-  },
+  projectStatistics:projectStatistics,
   listProjects: userProject[],
   listTasks: userTasks[]
 }

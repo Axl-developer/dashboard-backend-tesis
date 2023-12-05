@@ -1,8 +1,8 @@
-import { Server, Socket } from 'socket.io'
-import { server } from './events.types'
+import { Server } from 'socket.io'
+import { serverEvents } from './events.types'
 
 export default (io: Server) => {
   io.on('connection', (socket) => {
-    socket.emit(server.welcom, 'welcome')
+    socket.emit(serverEvents.welcom, 'welcome to my socket app')
   })
 }
